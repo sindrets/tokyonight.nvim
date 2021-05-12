@@ -157,10 +157,10 @@ function M.setup(config)
     LspReferenceRead = { bg = c.fg_gutter }, -- used for highlighting "read" references
     LspReferenceWrite = { bg = c.fg_gutter }, -- used for highlighting "write" references
 
-    LspDiagnosticsDefaultError = { fg = c.error }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
-    LspDiagnosticsDefaultWarning = { fg = c.warning }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
-    LspDiagnosticsDefaultInformation = { fg = c.info }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
-    LspDiagnosticsDefaultHint = { fg = c.hint }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
+    LspDiagnosticsDefaultError = { fg = c.error, style = 'bold' }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
+    LspDiagnosticsDefaultWarning = { fg = c.warning, style = 'bold' }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
+    LspDiagnosticsDefaultInformation = { fg = c.info, style = 'bold' }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
+    LspDiagnosticsDefaultHint = { fg = c.hint, style = 'bold' }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
 
     LspDiagnosticsVirtualTextError = { bg = util.darken(c.error, 0.1), fg = c.error }, -- Used for "Error" diagnostic virtual text
     LspDiagnosticsVirtualTextWarning = { bg = util.darken(c.warning, 0.1), fg = c.warning }, -- Used for "Warning" diagnostic virtual text
@@ -317,10 +317,10 @@ function M.setup(config)
     WhichKeyValue = { fg = c.dark5 },
 
     -- LspSaga
-    DiagnosticError = { fg = c.error },
-    DiagnosticWarning = { fg = c.warning },
-    DiagnosticInformation = { fg = c.info },
-    DiagnosticHint = { fg = c.hint },
+    DiagnosticError = { fg = c.error, style = 'bold' },
+    DiagnosticWarning = { fg = c.warning, style = 'bold' },
+    DiagnosticInformation = { fg = c.info, style = 'bold' },
+    DiagnosticHint = { fg = c.hint, style = 'bold' },
 
     -- NeoVim
     healthError = { fg = c.error },
