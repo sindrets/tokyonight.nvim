@@ -278,9 +278,9 @@ function M.setup(config)
     GitGutterDelete = { fg = c.gitSigns.delete }, -- diff mode: Deleted line |diff.txt|
 
     -- GitSigns
-    GitSignsAdd = { fg = c.gitSigns.add }, -- diff mode: Added line |diff.txt|
-    GitSignsChange = { fg = c.gitSigns.change }, -- diff mode: Changed line |diff.txt|
-    GitSignsDelete = { fg = c.gitSigns.delete }, -- diff mode: Deleted line |diff.txt|
+    GitSignsAdd = { fg = c.git.add }, -- diff mode: Added line |diff.txt|
+    GitSignsChange = { fg = c.git.change }, -- diff mode: Changed line |diff.txt|
+    GitSignsDelete = { fg = c.git.delete }, -- diff mode: Deleted line |diff.txt|
 
     -- Telescope
     TelescopeBorder = { fg = c.border_highlight },

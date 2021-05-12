@@ -45,6 +45,7 @@ function M.setup(config)
   }
   if config.style == "night" or config.style == "day" or vim.o.background == "light" then
     colors.bg = "#1a1b26"
+    colors.bg_dark = "#16161F"
   end
   util.bg = colors.bg
 
